@@ -1,0 +1,18 @@
+﻿@using TravelSiteWeb.ViewModel
+
+@model List<ClientOrderViewModel>
+
+<h1>Lista klientów i ich rezerwacji</h1>
+
+@foreach (var clientOrderViewModel in Model)
+{
+    <h2>@clientOrderViewModel.FullName</h2>
+    <p>Telefon: @clientOrderViewModel.PhoneNumber</p>
+    <h3>Rezerwacje:</h3>
+    <ul>
+        @foreach (var reservation in clientOrderViewModel.Reservations)
+        {
+            <li>@reservation.Title - Koszt: @reservation.Cost</li>
+        }
+    </ul>
+}

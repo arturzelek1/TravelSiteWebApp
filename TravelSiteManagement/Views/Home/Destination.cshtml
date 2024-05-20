@@ -1,0 +1,49 @@
+﻿@using TravelSiteWeb.ViewModel
+@model IEnumerable<TravelDetail>
+@{
+    ViewData["Title"] = "Destination";
+}
+<link rel="stylesheet" href="~/css/Destination.css" />
+
+
+<section class="section-finder">
+<div class="finder">
+    
+    <div class="date-from">
+        <label class="label-date-from">Od kiedy?</label>
+            
+        <div class="pool">Wyszukaj
+                <img id="date-icon" src="https://icons.veryicon.com/png/o/business/sunshine/date-27.png" />
+        </div>
+        
+    </div>
+    <div class="date-to">
+        <label class="label-date-to">Do kiedy?</label>
+        <div class="pool">Wyszukaj
+                <img id="date-icon" src="https://icons.veryicon.com/png/o/business/sunshine/date-27.png" />
+        </div>
+    </div>
+    <div class="where">
+        <label class="label-where">Gdzie?</label>
+        <div class="pool">Wyszukaj
+                <img id="where-icon" src="https://cdn-icons-png.flaticon.com/512/2582/2582606.png"></img>
+        </div>
+    </div>
+    <div class="from">
+        <label class="label-from">Skąd?</label>
+        <div class="pool">Wyszukaj
+                <img id="from-icon" src="https://www.freeiconspng.com/uploads/location-icon-24.png"></img>
+        </div>
+    </div>
+   
+</div>
+</section>
+
+<ul>
+    @foreach(var travel in Model)
+    {
+        <li>
+            @travel.Name-@travel.Country-@travel.Cost
+        </li>
+    }
+</ul>

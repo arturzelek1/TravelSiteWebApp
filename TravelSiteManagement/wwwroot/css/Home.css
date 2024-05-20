@@ -1,0 +1,114 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+.starter {
+    font-family: Tahoma, sans-serif;
+    margin-top: 100px;
+    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/06/08/cute-background-beach-tropical-summer-Graphics-31964446-1.jpg); /* ścieżka do obrazu */
+    background-size: cover; /* dostosowanie obrazu do rozmiaru ekranu */
+    background-repeat: no-repeat; /* zapobiega powtarzaniu tła */
+    width: 100%;
+    text-align: end;
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
+    top: 75px;
+    right: 500px;
+}
+
+#welcome {
+    color: white;
+    font-family: Tahoma, sans-serif;
+    margin-right: 20px;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    font-family: Tahoma, sans-serif;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top-width: 5px;
+    border-top-color: #3197D6;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    font-family: Tahoma, sans-serif;
+    content: "";
+    display: table;
+    clear: both;
+    border-spacing: 10px;
+}
+
+#italy {
+    float: right;
+    height: 60%;
+    width: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#spain {
+    float: right;
+    height: 60%;
+    width: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#turkey {
+    float: right;
+    height: 60%;
+    width: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#greece {
+    float: right;
+    height: 60%;
+    width: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.image-container {
+    position: relative;
+}
+
+#image-text {
+    font-family: Tahoma, sans-serif;
+    float: right;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    background-color: #0AD1E0; /* Background color for the text */
+    color: white; /* Text color */
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #0AD1E0;
+    color: white;
+    border-color: #007bff;
+}
+
+    .btn-primary:hover {
+        background-color: #0AD1E0;
+        color: white;
+        border-color: #0056b3;
+    }

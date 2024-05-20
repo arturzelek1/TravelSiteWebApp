@@ -1,0 +1,125 @@
+/* _content/TravelSiteWeb/Views/Home/Destination.cshtml.rz.scp.css */
+/*.finder {
+    font-family: Tahoma, sans-serif;
+    margin-top: 120px;
+    background-color: #3197D6;
+    color: white;
+    height:200px;
+    text-align:center;
+    
+}
+*/
+/**/
+.section-finder[b-z8l3qiibd5] {
+    margin-top: 120px;
+    background-color: #3197D6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.finder[b-z8l3qiibd5] {
+    column-count: 4;
+    text-align: center;
+    color: white;
+}
+
+.pool[b-z8l3qiibd5] {
+    color: darkgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin: 20px;
+}
+
+#date-icon[b-z8l3qiibd5] {
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+}
+
+#where-icon[b-z8l3qiibd5] {
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+}
+
+#from-icon[b-z8l3qiibd5] {
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+}
+/* _content/TravelSiteWeb/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.navbar[b-jbv9629f58] {
+    font-family: Tahoma, sans-serif;
+    position: fixed;
+    margin-bottom: 50px;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    padding: 10px 0; /* wewnętrzny odstęp na górze i dołu */
+    z-index: 1000; /* ustawia wyższy indeks warstwy, aby był zawsze na wierzchu */
+}
+
+a.navbar-brand[b-jbv9629f58] {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+.logo[b-jbv9629f58] {
+    background-color: white;
+    height: 64px;
+    width: 64px;
+}
+
+a[b-jbv9629f58] {
+    color: #0077cc;
+}
+
+.phoneNumber[b-jbv9629f58] {
+    float: right;
+}
+
+.btn-primary[b-jbv9629f58] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-jbv9629f58], .nav-pills .show > .nav-link[b-jbv9629f58] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top[b-jbv9629f58] {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom[b-jbv9629f58] {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-jbv9629f58] {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-jbv9629f58] {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer[b-jbv9629f58] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
