@@ -15,13 +15,14 @@ namespace TravelSiteWeb.Controllers
         private readonly ILogger<HomeController> _logger;
         //Propably wont work 
         //private readonly IClientOrderService _clientOrderService;
-
+        private readonly UserService _userService;
         private readonly MappingService _mappingService;
 
-        public HomeController(ILogger<HomeController> logger, MappingService mappingService)
+        public HomeController(ILogger<HomeController> logger,UserService userService ,MappingService mappingService)
         {
             _logger = logger;
             _mappingService = mappingService;
+            _userService = userService;
         }
 
         private IEnumerable<TravelDetail> travel = new
@@ -70,8 +71,11 @@ namespace TravelSiteWeb.Controllers
             var clientOrderViewModels = _mappingService.GetClientOrderViewModels(context);
             return View(clientOrderViewModels);
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            //Testing User Service
+
+            await _userService.UserFind();
             return View();
         }
 

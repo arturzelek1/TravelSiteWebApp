@@ -24,7 +24,7 @@ namespace RepositoryUsingEFinMVC.Controllers
         //Initializing the _employeeRepository through parameterless constructor
         public ReservationController(IReservationRepository reservationRepository, IPaginatedListService paginatedListService, IValidator<Reservation> validator)
         {
-            _reservationRepository = new ReservationRepository(new TravelContext());
+            _reservationRepository = reservationRepository;
             _paginatedListService = paginatedListService;
             _validator = validator;
         }

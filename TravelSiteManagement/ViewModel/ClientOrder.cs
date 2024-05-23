@@ -9,6 +9,7 @@ namespace TravelSiteWeb.ViewModel
         //Client needed fields
         public int ClientID { get; set; }
         public string FullName { get; set; }
+        public string Email { get; set; }
         public string PhoneNumber { get; set; }
         //Reservation needed fields
         public int ReservationID { get; set; }

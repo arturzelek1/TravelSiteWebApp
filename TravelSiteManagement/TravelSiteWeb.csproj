@@ -28,10 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Migrations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\css\Home.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

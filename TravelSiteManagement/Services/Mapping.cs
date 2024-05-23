@@ -27,6 +27,7 @@ namespace TravelSiteWeb.Services
             TypeAdapterConfig<Client, ClientOrderViewModel>.NewConfig()
                 .Map(dest => dest.ClientID, src => src.ClientID)
                 .Map(dest => dest.FullName, src => $"{src.FirstName} {src.LastName}")
+                .Map(dest => dest.Email, src => src.Email)
                 .Map(dest => dest.PhoneNumber, src => src.PhoneNumber);
             TypeAdapterConfig<Reservation, ClientOrderViewModel>.NewConfig()
                 .Map(dest => dest.ReservationID, src => src.ReservationID)

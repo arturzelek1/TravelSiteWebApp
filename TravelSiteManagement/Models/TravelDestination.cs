@@ -1,26 +1,29 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TravelSiteWeb.Models
-{
-    public enum Country
-    {
-        Italy, Spain, Turkey, Greece
-    }
+{ 
 
     public class TravelDestination
     {
         [Key]
         public int TravelDestinationID { get; set; }
-        public Country? Country { get; set; }
+        public DateTime DateStart { get; set; }
+        public DateTime DateEnd { get; set; }
+        public string FromLocation { get; set; }
+        public string ToLocation { get; set; }
         public float Cost { get; set; }
         public string City { get; set; }
 
-        public virtual ICollection<Reservation> Reservations { get; set; }
+        public ICollection<Reservation> Reservations { get; set; }
+        public ICollection<Flight> Flights { get; set; }
+        public ICollection<Hotel> Hotels { get; set; }
 
-        public TravelDestination()
-        {
-            Reservations = new HashSet<Reservation>();
-        }
+        //public int ReservationID { get; set; }
+        //public  ICollection<Reservation> Reservations { get; set; }
+        //public  ICollection<Hotel> Hotels { get; set; }
+        //public  ICollection<Flight> Flights { get; set; }
+       
     }
 }

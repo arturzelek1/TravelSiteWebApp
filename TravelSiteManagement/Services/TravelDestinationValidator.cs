@@ -11,13 +11,15 @@ namespace TravelSiteWeb.Services
     {
         public TravelDestinationValidator()
         {
-            RuleFor(x => x.Country).NotNull().Must(country => BeValidEnum(country)).WithMessage("Invalid country for trip");
+            //RuleFor(x => x.Country).NotNull().Must(country => BeValidEnum(country)).WithMessage("Invalid country for trip");
             RuleFor(x => x.Cost).NotNull();
             RuleFor(x => x.City).NotEmpty().Length(20, 255);
         }
+        /*
         private bool BeValidEnum(Country? country)
         {
             return country.HasValue && Enum.IsDefined(typeof(Country), country.Value);
         }
+        */
     }
 }

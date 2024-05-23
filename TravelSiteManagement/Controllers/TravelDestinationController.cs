@@ -16,13 +16,14 @@ namespace RepositoryUsingEFinMVC.Controllers
         //Create a variable to hold the instance of EmployeeRepository
         private ITravelDestinationRepository _destinationRepository;
         private readonly IPaginatedListService _paginatedListService;
+        private readonly TravelContext _context;
         //private readonly IPaginatedList<TravelDestination> _paginatedListService;
         //Initializing the _employeeRepository through parameterless constructor
-        public TravelDestinationController(IPaginatedListService paginatedListService)
+        public TravelDestinationController(IPaginatedListService paginatedListService, TravelContext context, ITravelDestinationRepository destinationRepository)
         {
-            _destinationRepository = new TravelDestinationRepository(new TravelContext());
+            _destinationRepository = destinationRepository;
             _paginatedListService = paginatedListService;
-
+            _context = context;
         }
         //If you want to Initialize _employeeRepository using Dependency Injection Container,
         //Then include the following Parameterized Constructor
@@ -58,16 +59,16 @@ namespace RepositoryUsingEFinMVC.Controllers
             switch (sortOrder)
             {
                 case "CityName_desc":
-                    destinations = destinations.OrderByDescending(d => d.City);
+                    destinations = destinations.OrderByDescending(d => d.DateStart);
                     break;
                 case "CityName_asc":
-                    destinations = destinations.OrderBy(d => d.City);
+                    destinations = destinations.OrderBy(d => d.DateStart);
                     break;
                 case "Country_desc":
-                    destinations = destinations.OrderByDescending(d => d.Country);
+                    destinations = destinations.OrderByDescending(d => d.Cost);
                     break;
                 default:
-                    destinations = destinations.OrderBy(d => d.Country);
+                    destinations = destinations.OrderBy(d => d.Cost);
                     break;
             }
 

@@ -24,13 +24,28 @@
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["FirstNameSortParm"]">@Html.DisplayNameFor(model => model.First().FirstName)</a>
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.First().MiddleName)
+            </th>
+            <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["LastNameSortParm"]">@Html.DisplayNameFor(model => model.First().LastName)</a>
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.First().TravelDate)
+             <th>
+                @Html.DisplayNameFor(model => model.First().DateOfBirth)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.First().Email)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.First().Address)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.First().PostalCode)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.First().Address)
+                @Html.DisplayNameFor(model => model.First().City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Nationality)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.First().PhoneNumber)
@@ -46,13 +61,28 @@
                     @Html.DisplayFor(modelItem => item.FirstName)
                 </td>
                 <td>
+                    @Html.DisplayFor(modelItem => item.MiddleName)
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.LastName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.TravelDate)
+                    @Html.DisplayFor(modelItem => item.DateOfBirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PostalCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nationality)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.PhoneNumber)

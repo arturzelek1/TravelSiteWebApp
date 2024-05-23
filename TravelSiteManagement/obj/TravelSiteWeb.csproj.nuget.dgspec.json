@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\UBB\\Semestr6\\AspNET\\TravelSiteSystem\\TravelSiteManagement\\TravelSiteWeb.csproj": {}
+    "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\TravelSiteWeb.csproj": {}
   },
   "projects": {
-    "E:\\UBB\\Semestr6\\AspNET\\TravelSiteSystem\\TravelSiteManagement\\TravelSiteWeb.csproj": {
+    "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\TravelSiteWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UBB\\Semestr6\\AspNET\\TravelSiteSystem\\TravelSiteManagement\\TravelSiteWeb.csproj",
+        "projectUniqueName": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\TravelSiteWeb.csproj",
         "projectName": "TravelSiteWeb",
-        "projectPath": "E:\\UBB\\Semestr6\\AspNET\\TravelSiteSystem\\TravelSiteManagement\\TravelSiteWeb.csproj",
+        "projectPath": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\TravelSiteWeb.csproj",
         "packagesPath": "C:\\Users\\artim\\.nuget\\packages\\",
-        "outputPath": "E:\\UBB\\Semestr6\\AspNET\\TravelSiteSystem\\TravelSiteManagement\\obj\\",
+        "outputPath": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\artim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

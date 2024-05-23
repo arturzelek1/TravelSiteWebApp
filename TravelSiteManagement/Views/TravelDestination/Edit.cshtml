@@ -11,10 +11,31 @@
         @Html.ValidationSummary(true)
         @Html.HiddenFor(model => model.TravelDestinationID)
         <div class="form-group">
-            @Html.LabelFor(model => model.Country, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.DateStart, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Country)
-                @Html.ValidationMessageFor(model => model.Country)
+                @Html.EditorFor(model => model.DateStart)
+                @Html.ValidationMessageFor(model => model.DateStart)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateEnd, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DateEnd)
+                @Html.ValidationMessageFor(model => model.DateEnd)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.FromLocation, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FromLocation)
+                @Html.ValidationMessageFor(model => model.FromLocation)
+            </div>
+        </div>
+         <div class="form-group">
+            @Html.LabelFor(model => model.ToLocation, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ToLocation)
+                @Html.ValidationMessageFor(model => model.ToLocation)
             </div>
         </div>
         <div class="form-group">

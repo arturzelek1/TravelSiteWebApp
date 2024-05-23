@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IBqqT60CBm3SLRWao75kWio7QSCmFpfllaz8oZ6d7cdROw5zWNuK22BiRcJHO4lwrqE1DpljSW4XmFHhUAVJtA==",
+  "dgSpecHash": "0E0vN2k96M0=",
   "success": true,
-  "projectFilePath": "E:\\UBB\\Semestr6\\AspNET\\TravelSiteSystem\\TravelSiteManagement\\TravelSiteWeb.csproj",
+  "projectFilePath": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\TravelSiteWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artim\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\artim\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

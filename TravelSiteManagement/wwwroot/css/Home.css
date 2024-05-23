@@ -25,68 +25,6 @@
     margin-right: 20px;
 }
 
-
-/* Create two equal columns that floats next to each other */
-.column {
-    font-family: Tahoma, sans-serif;
-    float: left;
-    width: 50%;
-    padding: 20px;
-    border: solid;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    border-top-width: 5px;
-    border-top-color: #3197D6;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    font-family: Tahoma, sans-serif;
-    content: "";
-    display: table;
-    clear: both;
-    border-spacing: 10px;
-}
-
-#italy {
-    float: right;
-    height: 60%;
-    width: 60%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#spain {
-    float: right;
-    height: 60%;
-    width: 60%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#turkey {
-    float: right;
-    height: 60%;
-    width: 60%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#greece {
-    float: right;
-    height: 60%;
-    width: 60%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
-
-.image-container {
-    position: relative;
-}
-
 #image-text {
     font-family: Tahoma, sans-serif;
     float: right;
@@ -112,3 +50,50 @@
         color: white;
         border-color: #0056b3;
     }
+
+/* Styling for search box*/
+/*.section-finder {
+    margin-top: 120px;
+    background-color: #3197D6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.finder {
+    column-count: 4;
+    text-align: center;
+    color: white;
+}
+
+.pool {
+    color: darkgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+
+.pool2 {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#date {
+  
+ 
+    
+}
+#where-icon {
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+}
+
+#from-icon {
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+}
+    */

@@ -22,6 +22,51 @@ namespace TravelSiteWeb.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ClientReservation", b =>
+                {
+                    b.Property<int>("ClientsClientID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReservationsReservationID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ClientsClientID", "ReservationsReservationID");
+
+                    b.HasIndex("ReservationsReservationID");
+
+                    b.ToTable("ClientReservation");
+                });
+
+            modelBuilder.Entity("FlightTravelDestination", b =>
+                {
+                    b.Property<int>("FlightsFlightID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TravelDestinationsTravelDestinationID")
+                        .HasColumnType("int");
+
+                    b.HasKey("FlightsFlightID", "TravelDestinationsTravelDestinationID");
+
+                    b.HasIndex("TravelDestinationsTravelDestinationID");
+
+                    b.ToTable("FlightTravelDestination");
+                });
+
+            modelBuilder.Entity("HotelTravelDestination", b =>
+                {
+                    b.Property<int>("HotelsHotelID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TravelDestinationsTravelDestinationID")
+                        .HasColumnType("int");
+
+                    b.HasKey("HotelsHotelID", "TravelDestinationsTravelDestinationID");
+
+                    b.HasIndex("TravelDestinationsTravelDestinationID");
+
+                    b.ToTable("HotelTravelDestination");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -167,12 +212,10 @@ namespace TravelSiteWeb.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -209,12 +252,10 @@ namespace TravelSiteWeb.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -222,6 +263,21 @@ namespace TravelSiteWeb.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("ReservationTravelDestination", b =>
+                {
+                    b.Property<int>("ReservationsReservationID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TravelDestinationsTravelDestinationID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ReservationsReservationID", "TravelDestinationsTravelDestinationID");
+
+                    b.HasIndex("TravelDestinationsTravelDestinationID");
+
+                    b.ToTable("ReservationTravelDestination");
                 });
 
             modelBuilder.Entity("TravelSiteWeb.Models.Client", b =>
@@ -236,6 +292,17 @@ namespace TravelSiteWeb.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -244,16 +311,118 @@ namespace TravelSiteWeb.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MiddleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nationality")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("TravelDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("PostalCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ClientID");
 
                     b.ToTable("Client", (string)null);
+                });
+
+            modelBuilder.Entity("TravelSiteWeb.Models.Flight", b =>
+                {
+                    b.Property<int>("FlightID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FlightID"));
+
+                    b.Property<DateTime>("ArrivalDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DepartureDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("FlightCost")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("FlightNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FromLocation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ToLocation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TravelDestinationID")
+                        .HasColumnType("int");
+
+                    b.HasKey("FlightID");
+
+                    b.ToTable("Flight", (string)null);
+                });
+
+            modelBuilder.Entity("TravelSiteWeb.Models.Hotel", b =>
+                {
+                    b.Property<int>("HotelID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HotelID"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("CostPerNight")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HotelName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Website")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HotelID");
+
+                    b.ToTable("Hotel", (string)null);
                 });
 
             modelBuilder.Entity("TravelSiteWeb.Models.Reservation", b =>
@@ -283,10 +452,6 @@ namespace TravelSiteWeb.Migrations
 
                     b.HasKey("ReservationID");
 
-                    b.HasIndex("ClientID");
-
-                    b.HasIndex("TravelDestinationID");
-
                     b.ToTable("Reservation", (string)null);
                 });
 
@@ -305,12 +470,68 @@ namespace TravelSiteWeb.Migrations
                     b.Property<float>("Cost")
                         .HasColumnType("real");
 
-                    b.Property<int?>("Country")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("DateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DateStart")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FromLocation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ToLocation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("TravelDestinationID");
 
                     b.ToTable("TravelDestination", (string)null);
+                });
+
+            modelBuilder.Entity("ClientReservation", b =>
+                {
+                    b.HasOne("TravelSiteWeb.Models.Client", null)
+                        .WithMany()
+                        .HasForeignKey("ClientsClientID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TravelSiteWeb.Models.Reservation", null)
+                        .WithMany()
+                        .HasForeignKey("ReservationsReservationID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FlightTravelDestination", b =>
+                {
+                    b.HasOne("TravelSiteWeb.Models.Flight", null)
+                        .WithMany()
+                        .HasForeignKey("FlightsFlightID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TravelSiteWeb.Models.TravelDestination", null)
+                        .WithMany()
+                        .HasForeignKey("TravelDestinationsTravelDestinationID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("HotelTravelDestination", b =>
+                {
+                    b.HasOne("TravelSiteWeb.Models.Hotel", null)
+                        .WithMany()
+                        .HasForeignKey("HotelsHotelID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TravelSiteWeb.Models.TravelDestination", null)
+                        .WithMany()
+                        .HasForeignKey("TravelDestinationsTravelDestinationID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -364,33 +585,19 @@ namespace TravelSiteWeb.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("TravelSiteWeb.Models.Reservation", b =>
+            modelBuilder.Entity("ReservationTravelDestination", b =>
                 {
-                    b.HasOne("TravelSiteWeb.Models.Client", "Clients")
-                        .WithMany("Reservations")
-                        .HasForeignKey("ClientID")
+                    b.HasOne("TravelSiteWeb.Models.Reservation", null)
+                        .WithMany()
+                        .HasForeignKey("ReservationsReservationID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TravelSiteWeb.Models.TravelDestination", "TravelDestinations")
-                        .WithMany("Reservations")
-                        .HasForeignKey("TravelDestinationID")
+                    b.HasOne("TravelSiteWeb.Models.TravelDestination", null)
+                        .WithMany()
+                        .HasForeignKey("TravelDestinationsTravelDestinationID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Clients");
-
-                    b.Navigation("TravelDestinations");
-                });
-
-            modelBuilder.Entity("TravelSiteWeb.Models.Client", b =>
-                {
-                    b.Navigation("Reservations");
-                });
-
-            modelBuilder.Entity("TravelSiteWeb.Models.TravelDestination", b =>
-                {
-                    b.Navigation("Reservations");
                 });
 #pragma warning restore 612, 618
         }

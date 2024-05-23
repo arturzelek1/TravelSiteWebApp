@@ -22,15 +22,23 @@
             @Html.DisplayNameFor(model => model.FirstOrDefault().TravelDestinationID)
         </th>
         <th>
-            <a asp-action="Index" asp-route-sortOrder="@ViewData["CountrySortParm"]">@Html.DisplayNameFor(model => model.FirstOrDefault().Country)</a>
+            <a asp-action="Index" asp-route-sortOrder="@ViewData["CountrySortParm"]">@Html.DisplayNameFor(model => model.FirstOrDefault().DateStart)</a>
         </th>
         <th>
-            <a asp-action="Index" asp-route-sortOrder="@ViewData["CitySortParm"]">@Html.DisplayNameFor(model => model.FirstOrDefault().City)</a>
+            <a asp-action="Index" asp-route-sortOrder="@ViewData["CitySortParm"]">@Html.DisplayNameFor(model => model.FirstOrDefault().DateEnd)</a>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().FromLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().ToLocation)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.FirstOrDefault().Cost)
         </th>
-
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().City)
+        </th>
         <th></th>
     </tr>
     @foreach (var item in Model)
@@ -40,13 +48,22 @@
                 @Html.DisplayFor(modelItem => item.TravelDestinationID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Country)
+                @Html.DisplayFor(modelItem => item.DateStart)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.City)
+                @Html.DisplayFor(modelItem => item.DateEnd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToLocation)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { TravelDestinationID = item.TravelDestinationID }) |
