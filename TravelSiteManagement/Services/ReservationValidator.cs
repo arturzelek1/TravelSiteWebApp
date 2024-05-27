@@ -17,8 +17,8 @@ namespace TravelSiteWeb.Services
             RuleFor(x => x.Title).NotEmpty();
             RuleFor(x => x.Cost).NotNull();
             RuleFor(x => x.Description).Length(0, 255);
-            RuleFor(x => x.ClientID).Must(BeExistingClientID).WithMessage("Provided ClientID doesn't exist");
-            RuleFor(x => x.ClientID).Must(BeExistingTravelDestinationID).WithMessage("Provided TravelDestinationID doesn't exist");
+            //RuleFor(x => x.ClientID).Must(BeExistingClientID).WithMessage("Provided ClientID doesn't exist");
+            //RuleFor(x => x.ClientID).Must(BeExistingTravelDestinationID).WithMessage("Provided TravelDestinationID doesn't exist");
         }
 
         // Should be private, public for testing

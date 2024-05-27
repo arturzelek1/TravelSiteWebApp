@@ -2,6 +2,9 @@
 @{
     ViewBag.Title = "AddReservation";
 }
+
+<link rel="stylesheet" href="~/css/Test.css" />
+<div class="Page">
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -54,4 +57,5 @@
 }
 <div>
     @Html.ActionLink("Back to reservations list", "Index")
+</div>
 </div>

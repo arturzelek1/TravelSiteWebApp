@@ -64,11 +64,6 @@ namespace ProgramSettings
             builder.Services.AddScoped<ITravelDestinationRepository, TravelDestinationRepository>();
             builder.Services.AddControllersWithViews();
 
-            //Roles
-            //Role Manager
-            builder.Services.AddTransient<RolesService>();
-            //User Manager
-            builder.Services.AddTransient<UserService>();
             /******************************************************************************/
 
             //Injecting validators
@@ -152,6 +147,37 @@ namespace ProgramSettings
                 app.UseHsts();
             }
 
+            // Roles
+            using (var scope = app.Services.CreateScope())
+            {
+                var rolesService = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+                
+                var roles = new[] { "Admin", "Manager", "User" };
+
+                foreach (var role in roles)
+                {
+                    if (!await rolesService.RoleExistsAsync(role))
+                    {
+                        await rolesService.CreateAsync(new IdentityRole(role));
+                    }
+                }
+            }
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+
+                string email = "admin@admin.com";
+                string password = "Admin1234!";
+
+                if(await userManager.FindByEmailAsync(email) == null)
+                {
+                    var user = new IdentityUser { UserName = email, Email = email };
+                    
+                    await userManager.CreateAsync(user, password);
+                    await userManager.AddToRoleAsync(user, "Admin");
+                }
+            }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

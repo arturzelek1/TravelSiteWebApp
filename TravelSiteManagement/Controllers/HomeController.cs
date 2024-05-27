@@ -15,56 +15,15 @@ namespace TravelSiteWeb.Controllers
         private readonly ILogger<HomeController> _logger;
         //Propably wont work 
         //private readonly IClientOrderService _clientOrderService;
-        private readonly UserService _userService;
+        //private readonly UserService _userService;
         private readonly MappingService _mappingService;
 
-        public HomeController(ILogger<HomeController> logger,UserService userService ,MappingService mappingService)
+        public HomeController(ILogger<HomeController> logger,MappingService mappingService)
         {
             _logger = logger;
             _mappingService = mappingService;
-            _userService = userService;
+            
         }
-
-        private IEnumerable<TravelDetail> travel = new
-        List<TravelDetail>
-        {
-            new TravelDetail
-            {
-                Id = 1,
-                Name = "Cinque Terre",
-                Country = "Italy",
-                Description = "City break in cinque terre",
-                Cost = 800
-
-            },
-            new TravelDetail
-            {
-                Id= 2,
-                Name = "Barcelona",
-                Country = "Spain",
-                Description = "Flamenco dance",
-                Cost = 1400
-            },
-            new TravelDetail
-            {
-                Id = 3,
-                Name = "Cappadocia",
-                Country = "Turkey",
-                Description = "Baloons in Turkey",
-                Cost = 900
-            },
-            new TravelDetail
-            {
-                Id= 4,
-                Name = "Santorini",
-                Country = "Greece",
-                Description = "Beautiful Greece sights",
-                Cost = 1200
-
-            }
-
-        };
-
 
         public IActionResult ClientOrder([FromServices] TravelContext context)
         {
@@ -73,15 +32,12 @@ namespace TravelSiteWeb.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            //Testing User Service
-
-            await _userService.UserFind();
             return View();
         }
 
         public IActionResult Destination()
         {
-            return View(travel);
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

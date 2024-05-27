@@ -36,60 +36,16 @@ namespace TravelSiteWeb.Data
             modelBuilder.Entity<Flight>().ToTable("Flight");
             modelBuilder.Entity<Hotel>().ToTable("Hotel");
 
-            //Client/Reservation
-            //modelBuilder.Entity<ClientReservation>()
-            //    .HasKey(cr => new { cr.ClientID, cr.ReservationID });
-            //
-            //modelBuilder.Entity<Client>()
-            //    .HasMany(c => c.Reservations)
-            //    .WithMany(r => r.Clients)
-            //    .UsingEntity<ClientReservation>(
-            //    rtg => rtg
-            //        .HasOne(cr => cr.Reservations)
-            //        .WithMany()
-            //        .HasForeignKey(cr => cr.ReservationID),
-            //    rtg => rtg
-            //        .HasOne(cr => cr.Clients)
-            //        .WithMany()
-            //        .HasForeignKey(cr => cr.ClientID));
-            //
-            //modelBuilder.Entity<ReservationDestination>()
-            //    .HasKey(rd => new { rd.ReservationID, rd.TravelDestinationID });
-            ////Reservation/TravelDestination
-            //
-            ////TravelDestination/Hotel
-            //modelBuilder.Entity<DestinationHotel>()
-            //    .HasKey(dh => new { dh.TravelDestinationID, dh.HotelID });
-            //
-            //modelBuilder.Entity<TravelDestination>()
-            //    .HasMany(td => td.Hotels)
-            //    .WithMany(h => h.TravelDestinations)
-            //    .UsingEntity<DestinationHotel>(
-            //    rtg => rtg
-            //        .HasOne(dh => dh.Hotels)
-            //        .WithMany()
-            //        .HasForeignKey(dh => dh.HotelID),
-            //    rtg => rtg
-            //        .HasOne(dh => dh.TravelDestinations)
-            //        .WithMany()
-            //        .HasForeignKey(dh => dh.TravelDestinationID));
-            //
-            ////TravelDestination/Flight
-            //modelBuilder.Entity<TravelFlight>()
-            //    .HasKey(tf => new { tf.FlightID, tf.TravelDestinationID });
-            //modelBuilder.Entity<TravelDestination>()
-            //    .HasMany(td => td.Flights)
-            //    .WithMany(f => f.TravelDestinations)
-            //    .UsingEntity<TravelFlight>(
-            //    rtg => rtg
-            //        .HasOne(tf => tf.Flights)
-            //        .WithMany()
-            //        .HasForeignKey(tf => tf.FlightID),
-            //    rtg => rtg
-            //        .HasOne(tf => tf.TravelDestinations)
-            //        .WithMany()
-            //        .HasForeignKey(tf => tf.TravelDestinationID));
-            //
+            modelBuilder.Entity<Flight>()
+                .Property(f => f.FlightCost)
+                .HasColumnType("decimal(18, 2)"); 
+
+            modelBuilder.Entity<Hotel>()
+                .Property(h => h.CostPerNight)
+                .HasColumnType("decimal(18, 2)"); 
+            modelBuilder.Entity<Reservation>()
+                .Property(r => r.Cost)
+                .HasColumnType("decimal(18, 2)");
         }
     }
 }

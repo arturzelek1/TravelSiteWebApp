@@ -1,14 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using TravelSiteWeb.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using RepositoryUsingEFinMVC.Repository;
 using TravelSiteWeb.Data;
-using static RepositoryUsingEFinMVC.Repository.TravelDestinationRepository;
-using TravelSiteWeb;
 using TravelSiteWeb.Services;
+using FluentValidation;
+using FluentValidation.Results;
+
 namespace RepositoryUsingEFinMVC.Controllers
 {
     public class TravelDestinationController : Controller
@@ -17,13 +14,14 @@ namespace RepositoryUsingEFinMVC.Controllers
         private ITravelDestinationRepository _destinationRepository;
         private readonly IPaginatedListService _paginatedListService;
         private readonly TravelContext _context;
-        //private readonly IPaginatedList<TravelDestination> _paginatedListService;
-        //Initializing the _employeeRepository through parameterless constructor
-        public TravelDestinationController(IPaginatedListService paginatedListService, TravelContext context, ITravelDestinationRepository destinationRepository)
+        private readonly IValidator<TravelDestination> _validator;
+        
+        public TravelDestinationController(IValidator<TravelDestination> validator,IPaginatedListService paginatedListService, TravelContext context, ITravelDestinationRepository destinationRepository)
         {
             _destinationRepository = destinationRepository;
             _paginatedListService = paginatedListService;
             _context = context;
+            _validator = validator;
         }
         //If you want to Initialize _employeeRepository using Dependency Injection Container,
         //Then include the following Parameterized Constructor
@@ -65,10 +63,10 @@ namespace RepositoryUsingEFinMVC.Controllers
                     destinations = destinations.OrderBy(d => d.DateStart);
                     break;
                 case "Country_desc":
-                    destinations = destinations.OrderByDescending(d => d.Cost);
+                    destinations = destinations.OrderByDescending(d => d.ToLocation);
                     break;
                 default:
-                    destinations = destinations.OrderBy(d => d.Cost);
+                    destinations = destinations.OrderBy(d => d.ToLocation);
                     break;
             }
 
@@ -86,20 +84,24 @@ namespace RepositoryUsingEFinMVC.Controllers
         }
         //The following Action Method will be called when you click on the Submit button on the Add Employee view
         [HttpPost]
-        public ActionResult Add(TravelDestination model)
+        public async Task<ActionResult> Add(TravelDestination model)
         {
             //First Check whether the Model State is Valid or not
-            if (ModelState.IsValid)
+            ValidationResult result = await _validator.ValidateAsync(model);
+            if (result.IsValid)
             {
-                //If Model State is Valid, then call the Insert method EmployeeRepository to make the Entity State Added
+                //If Valid, then call the Insert Method of EmployeeRepository to make the Entity State Added
                 _destinationRepository.Insert(model);
                 //To make the changes permanent in the database, call the Save method of EmployeeRepository
                 _destinationRepository.Save();
-                //Once the data is saved into the database, redirect to the Index View
+                //Once the new data is saved into the database, redirect to the Index View
                 return RedirectToAction("Index", "TravelDestination");
             }
-            //If the Model state is not valid, then stay on the current AddEmployee view
-            return View();
+            else
+            {
+                //If the Model State is invalid, then stay on the same view
+                return View(model);
+            }
         }
         //The following Action Method will open the Edit Employee view based on the EmployeeId
         [HttpGet]
@@ -132,7 +134,7 @@ namespace RepositoryUsingEFinMVC.Controllers
         }
         //The following Action Method will open the Delete Employee view based on the EmployeeId
         [HttpGet]
-        public ActionResult DeleteDestination(int TravelDestinationID)
+        public ActionResult Delete(int TravelDestinationID)
         {
             //First, Fetch the Employee information by calling the GetById method of EmployeeRepository
             TravelDestination model = _destinationRepository.GetById(TravelDestinationID);
@@ -141,7 +143,7 @@ namespace RepositoryUsingEFinMVC.Controllers
         }
         //The following Action Method will be called when you click on the Submit button on the Delete Employee view
         [HttpPost]
-        public ActionResult Delete(int TravelDestinationID)
+        public ActionResult DeleteDestination(int TravelDestinationID)
         {
             //Call the Delete Method of the EmployeeRepository to Make the Entity State Deleted 
             _destinationRepository.Delete(TravelDestinationID);

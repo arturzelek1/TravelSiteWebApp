@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TravelSiteWeb.Data;
 
@@ -11,9 +12,11 @@ using TravelSiteWeb.Data;
 namespace TravelSiteWeb.Migrations
 {
     [DbContext(typeof(TravelContext))]
-    partial class TravelContextModelSnapshot : ModelSnapshot
+    [Migration("20240527183910_Roles")]
+    partial class Roles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -350,7 +353,7 @@ namespace TravelSiteWeb.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("FlightCost")
-                        .HasColumnType("decimal(18, 2)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("FlightNumber")
                         .IsRequired()
@@ -389,7 +392,7 @@ namespace TravelSiteWeb.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("CostPerNight")
-                        .HasColumnType("decimal(18, 2)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Country")
                         .IsRequired()
@@ -436,10 +439,11 @@ namespace TravelSiteWeb.Migrations
                     b.Property<int>("ClientID")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Cost")
-                        .HasColumnType("decimal(18, 2)");
+                    b.Property<float>("Cost")
+                        .HasColumnType("real");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
@@ -465,6 +469,9 @@ namespace TravelSiteWeb.Migrations
                     b.Property<string>("City")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Cost")
+                        .HasColumnType("real");
 
                     b.Property<DateTime>("DateEnd")
                         .HasColumnType("datetime2");

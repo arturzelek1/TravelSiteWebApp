@@ -6,7 +6,7 @@ for details on configuring this project to bundle and minify static web assets. 
     position: fixed;
     margin-bottom: 50px;
     top: 0;
-    /*visibility: hidden;*/
+    visibility: hidden;  /*ukrywa pasek nawigacji */
     width: 100%;
     padding: 10px 0; /* wewnętrzny odstęp na górze i dołu */
     z-index: 1000; /* ustawia wyższy indeks warstwy, aby był zawsze na wierzchu */

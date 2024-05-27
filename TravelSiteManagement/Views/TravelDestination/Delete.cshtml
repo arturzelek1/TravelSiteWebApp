@@ -4,7 +4,7 @@
 }
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    @using (Html.BeginForm("Delete", "Destination", FormMethod.Post))
+    @using (Html.BeginForm("DeleteDestination", "TravelDestination", FormMethod.Post))
     {
         @Html.HiddenFor(e => e.TravelDestinationID)
         <h4>Delete Destination</h4>
@@ -39,12 +39,6 @@
             </dt>
             <dd>
                 @Html.DisplayFor(model => model.ToLocation)
-            </dd>
-            <dt>
-                @Html.DisplayNameFor(model => model.Cost)
-            </dt>
-            <dd>
-                @Html.DisplayFor(model => model.Cost)
             </dd>
             <dt>
                 @Html.DisplayNameFor(model => model.City)

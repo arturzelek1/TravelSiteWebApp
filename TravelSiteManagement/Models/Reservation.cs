@@ -9,8 +9,8 @@ namespace TravelSiteWeb.Models
         [Key]
         public int ReservationID { get; set; }
         public string Title { get; set; }
-        public float Cost { get; set; }
-        public string Description { get; set; }
+        public decimal Cost { get; set; }
+        public string? Description { get; set; }
         public int ClientID { get; set; }
         public int TravelDestinationID { get; set; }
         

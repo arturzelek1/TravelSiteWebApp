@@ -33,6 +33,9 @@
         <th>
             @Html.DisplayNameFor(model => model.First().ClientID)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TravelDestinationID)
+        </th>
         <th></th>
     </tr>
     @foreach (var item in Model)
@@ -52,6 +55,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ClientID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelDestinationID)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { ReservationID = item.ReservationID }) |

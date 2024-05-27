@@ -15,6 +15,7 @@ namespace TravelSiteWeb.Models
         public string? MiddleName { get; set; }
 
         public string LastName { get; set; }
+        [DataType(DataType.Date)]
         public DateTime DateOfBirth { get; set; }
 
         public string Email { get; set; }

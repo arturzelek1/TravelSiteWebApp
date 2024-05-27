@@ -52,27 +52,27 @@ namespace TravelSiteWeb.Data
                 context.Reservations.Add(r);
             }
             context.SaveChanges();
-
+            /*
             if (context.TravelDestinations.Any())
             {
                 return;   // DB has been seeded
             }
             var travels = new TravelDestination[]
             {
-            new TravelDestination{DateStart=DateTime.Parse("2005-09-01"),DateEnd=DateTime.Parse("2005-09-10"),Cost=1000,City="Barcelona"},
-            new TravelDestination{DateStart=DateTime.Parse("2005-09-01"),DateEnd=DateTime.Parse("2005-09-10"), Cost = 1200,City = "Barcelona"},
-            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10"),Cost = 11000, City = "Barcelona"},
-            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10"),Cost = 1300,City = "Barcelona"},
-            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10"),Cost = 1500, City = "Barcelona"},
-            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10"),Cost = 600, City = "Barcelona"},
-            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10"),Cost = 9500 , City = "Barcelona"}
+            new TravelDestination{DateStart=DateTime.Parse("2005-09-01"),DateEnd=DateTime.Parse("2005-09-10"),City="Barcelona"},
+            new TravelDestination{DateStart=DateTime.Parse("2005-09-01"),DateEnd=DateTime.Parse("2005-09-10"),City = "Barcelona"},
+            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10"), City = "Barcelona"},
+            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10"),City = "Barcelona"},
+            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10"), City = "Barcelona"},
+            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10"), City = "Barcelona"},
+            new TravelDestination{DateStart = DateTime.Parse("2005-09-01"), DateEnd = DateTime.Parse("2005-09-10") , City = "Barcelona"}
             };
             foreach (TravelDestination td in travels)
             {
                 context.TravelDestinations.Add(td);
             }
             context.SaveChanges();
-
+            */
             if (context.Flights.Any())
             {
                 return; // DB has been seeded
