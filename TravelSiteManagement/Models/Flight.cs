@@ -16,13 +16,14 @@ namespace TravelSiteWeb.Models
 
         public DateTime ArrivalDate { get; set; }
 
-        public string FromLocation { get; set; }
+        public string AirportFrom { get; set; }
 
-        public string ToLocation { get; set; }
+        public string AirportTo { get; set; }
 
         public decimal FlightCost { get; set; }
 
-        public string City { get; set; }
+        // Might be unnecessary
+        public string AirportCity { get; set; }
 
         public ICollection<TravelDestination> TravelDestinations { get; set; }
 

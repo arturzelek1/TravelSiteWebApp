@@ -1,4 +1,10 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿var calendarEl = document.getElementById('calendar');
 
-// Write your JavaScript code.
+var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    selectable: true,
+    select: function (info) {
+        console.log('Selected range: ' + info.start + ' - ' + info.end);
+        // Tutaj możesz dodać kod, który będzie wykonywany po wybraniu zakresu dat
+    }
+});

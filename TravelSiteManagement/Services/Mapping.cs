@@ -33,6 +33,32 @@ namespace TravelSiteWeb.Services
                 .Map(dest => dest.ReservationID, src => src.ReservationID)
                 .Map(dest => dest.Title, src => src.Title)
                 .Map(dest => dest.Cost, src => src.Cost);
+
+            // Mapping for OfferViewModel
+            TypeAdapterConfig<TravelDestination, Offer>.NewConfig()
+                .Map(dest => dest.TravelDestinationID, src => src.TravelDestinationID)
+                .Map(dest => dest.DateStart, src => src.DateStart)
+                .Map(dest => dest.DateEnd, src => src.DateEnd)
+                .Map(dest => dest.FromLocation, src => src.FromLocation)
+                .Map(dest => dest.ToLocation, src => src.ToLocation)
+                .Map(dest => dest.City, src => src.City);
+            TypeAdapterConfig<Hotel, Offer>.NewConfig()
+                .Map(dest => dest.HotelID, src => src.HotelID)
+                .Map(dest => dest.HotelName, src => src.HotelName)
+                .Map(dest => dest.Address, src => src.Address)
+                .Map(dest => dest.HotelCity, src => src.HotelCity)
+                .Map(dest => dest.CostPerNight, src => src.CostPerNight)
+                .Map(dest => dest.Website, src => src.Website)
+                .Map(dest => dest.Image, src => src.Image);
+            TypeAdapterConfig<Flight, Offer>.NewConfig()
+                .Map(dest => dest.FlightID, src => src.FlightID)
+                .Map(dest => dest.FlightNumber, src => src.FlightNumber)
+                .Map(dest => dest.DepartureDate, src => src.DepartureDate)
+                .Map(dest => dest.ArrivalDate, src => src.ArrivalDate)
+                .Map(dest => dest.AirportTo, src => src.AirportTo)
+                .Map(dest => dest.AirportFrom, src => src.AirportFrom)
+                .Map(dest => dest.FlightCost, src => src.FlightCost);
+
         }
         public List<ClientOrderViewModel> GetClientOrderViewModels(TravelContext context)
         {
@@ -56,6 +82,29 @@ namespace TravelSiteWeb.Services
             return clientOrderViewModels;
 
         }
+
+        public List<Offer> GetOfferViewModel(TravelContext context)
+        {
+            var allDestinations = context.TravelDestinations.ToList();
+            var allHotels = context.Hotels.ToList();
+            var allFlights = context.Flights.ToList();
+
+            var offers = new List<Offer>();
+
+            foreach (var destination in allDestinations)
+            {
+                var offer = destination.Adapt<Offer>();
+                offer.Hotels = allHotels
+                    .Where(h => h.TravelDestinationID == destination.TravelDestinationID)
+                    .Adapt<List<Hotel>>() ?? new List<Hotel>();
+                offer.Flights = allFlights
+                    .Where(f => f.TravelDestinationID == destination.TravelDestinationID)
+                    .Adapt<List<Flight>>() ?? new List<Flight>();
+                offers.Add(offer);
+            }
+            return offers;
+        }
+
         public List<ClientViewModel> GetClientView(TravelContext context)
         {
             var allClients = context.Clients.ToList();

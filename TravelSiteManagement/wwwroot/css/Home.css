@@ -1,99 +1,109 @@
 ﻿* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100vh;
+    width: 100%;
+    font-family: Tahoma, sans-serif;
+    background-image: url('../Assets/CheapTravelBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .starter {
-    font-family: Tahoma, sans-serif;
-    margin-top: 100px;
-    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/06/08/cute-background-beach-tropical-summer-Graphics-31964446-1.jpg); /* ścieżka do obrazu */
-    background-size: cover; /* dostosowanie obrazu do rozmiaru ekranu */
-    background-repeat: no-repeat; /* zapobiega powtarzaniu tła */
-    width: 100%;
-    text-align: end;
-}
-
-#logo {
-    height: 150px;
-    width: 150px;
-    top: 75px;
-    right: 500px;
-}
-
-#welcome {
+    position: relative;
+    z-index: 1; /* Ensure the content is on top of the background image */
     color: white;
-    font-family: Tahoma, sans-serif;
-    margin-right: 20px;
+    height:100vh;
 }
 
-#image-text {
-    font-family: Tahoma, sans-serif;
-    float: right;
-    bottom: 0;
-    left: 0;
-    width: 60%;
-    background-color: #0AD1E0; /* Background color for the text */
-    color: white; /* Text color */
-    padding: 10px; /* Adjust padding as needed */
+.welcome {
     text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    margin-top: 10px;
 }
 
-.btn-primary {
-    background-color: #0AD1E0;
-    color: white;
-    border-color: #007bff;
+#sun-logo {
+    height: 50px;
+    width: 50px;
+
 }
+.section-finder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: none;
 
-    .btn-primary:hover {
-        background-color: #0AD1E0;
-        color: white;
-        border-color: #0056b3;
-    }
-
-/* Styling for search box*/
-/*.section-finder {
-    margin-top: 120px;
-    background-color: #3197D6;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
-
 
 .finder {
-    column-count: 4;
-    text-align: center;
-    color: white;
-}
-
-.pool {
-    color: darkgray;
-    padding-top: 10px;
+    display: flex;
+    align-items: stretch; /* Ensure all items stretch to the same height */
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1); /* Semi-transparent background */
+    border-radius: 50px;
+    padding: 20px 20px;
     padding-bottom: 10px;
-    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    width: 100%; /* Ensure full width */
+    max-width: 1200px; /* Max width for larger screens */
 }
 
-.pool2 {
-    background-color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-#date {
-  
- 
-    
-}
-#where-icon {
-    height: 30px;
-    width: 30px;
-    float: left;
-    margin-left: 10px;
+.form-group {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-right: 1px solid #ddd;
+    flex-grow: 1; /* Allow form groups to grow and take available space */
+    position: relative;
 }
 
-#from-icon {
-    height: 30px;
-    width: 30px;
-    float: left;
-    margin-left: 10px;
+    .form-group:last-child {
+        border-right: none;
+    }
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
 }
-    */
+
+    .input-container input[type="text"],
+    .input-container input[type="date"] {
+        border: none;
+        outline: none;
+        padding: 10px 10px 10px 20px; /* Extra padding for icon space */
+        width: 100%;
+        font-size: 14px;
+        background: transparent; /* Transparent input background */
+    }
+
+    .input-container .icon {
+        position: absolute;
+        right: 10px; /* Position icon to the right inside the input */
+        color: #333;
+        pointer-events: none; /* Allow click through to input */
+    }
+
+.form-group input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 100%; /* Ensure button stretches to match height */
+}
+
+.label-date-from, .label-date-to, .label-where, .label-from {
+    display: none;
+}

@@ -14,6 +14,7 @@ using TravelSiteWeb.Models;
 using RepositoryUsingEFinMVC.Repository;
 using FluentValidation;
 using System.Configuration;
+using TravelSiteWeb.Repository;
 
 namespace ProgramSettings
 {
@@ -62,6 +63,8 @@ namespace ProgramSettings
             builder.Services.AddScoped(typeof(IPaginatedListService), typeof(PaginatedListService));
             builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
             builder.Services.AddScoped<ITravelDestinationRepository, TravelDestinationRepository>();
+            builder.Services.AddScoped<IFlightRepository, FlightRepository>();
+            builder.Services.AddScoped<IHotelRepository, HotelRepository>();
             builder.Services.AddControllersWithViews();
 
             /******************************************************************************/
@@ -70,7 +73,8 @@ namespace ProgramSettings
             builder.Services.AddScoped<IValidator<Client>, ClientValidator>(); //Client validator
             builder.Services.AddScoped<IValidator<Reservation>, ReservationValidator>(); //Reservation validator
             builder.Services.AddScoped<IValidator<TravelDestination>, TravelDestinationValidator>(); //TravelDestination validator
-
+            builder.Services.AddScoped<IValidator<Hotel>, HotelValidator>(); //Hotel validator
+            builder.Services.AddScoped<IValidator<Flight>, FlightValidator>(); //Flight validator
             /******************************************************************************/
             using (var scope = host.Services.CreateScope())
             {

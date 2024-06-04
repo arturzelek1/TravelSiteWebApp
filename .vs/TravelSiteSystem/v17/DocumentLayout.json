@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "E:\\GitHub\\TravelSiteWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\viewmodel\\clientorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\viewmodel\\clientorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\viewmodel\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\viewmodel\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\wwwroot\\css\\banner.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\wwwroot\\css\\banner.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\services\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\services\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\models\\traveldestination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\models\\traveldestination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\wwwroot\\css\\lastminute.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\wwwroot\\css\\lastminute.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\wwwroot\\css\\imagegallery.css||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\wwwroot\\css\\imagegallery.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\home\\destination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\home\\destination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\hotel\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\hotel\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,92 +49,141 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 173,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 168,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Hotel.cs",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Models\\Hotel.cs",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Models\\Hotel.cs",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Models\\Hotel.cs",
-              "RelativeToolTip": "TravelSiteManagement\\Models\\Hotel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:59:26.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Flight.cs",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Models\\Flight.cs",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Models\\Flight.cs",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Models\\Flight.cs",
-              "RelativeToolTip": "TravelSiteManagement\\Models\\Flight.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:59:33.378Z",
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "TravelSiteManagement\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T01:19:52.359Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TravelDestination.cs",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Models\\TravelDestination.cs",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Models\\TravelDestination.cs",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Models\\TravelDestination.cs",
-              "RelativeToolTip": "TravelSiteManagement\\Models\\TravelDestination.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:59:42.599Z",
+              "Title": "lastMinute.css",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\lastMinute.css",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\wwwroot\\css\\lastMinute.css",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\lastMinute.css",
+              "RelativeToolTip": "TravelSiteManagement\\wwwroot\\css\\lastMinute.css",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-04T00:36:38.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClientOrder.cs",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\ViewModel\\ClientOrder.cs",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\ViewModel\\ClientOrder.cs",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\ViewModel\\ClientOrder.cs",
-              "RelativeToolTip": "TravelSiteManagement\\ViewModel\\ClientOrder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T23:00:12.652Z",
+              "DocumentIndex": 6,
+              "Title": "ImageGallery.css",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\ImageGallery.css",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\wwwroot\\css\\ImageGallery.css",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\ImageGallery.css",
+              "RelativeToolTip": "TravelSiteManagement\\wwwroot\\css\\ImageGallery.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-03T18:48:37.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.css",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Home.css",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\wwwroot\\css\\Home.css",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Home.css",
+              "RelativeToolTip": "TravelSiteManagement\\wwwroot\\css\\Home.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-03T16:40:19.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Banner.css",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Banner.css",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\wwwroot\\css\\Banner.css",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Banner.css",
+              "RelativeToolTip": "TravelSiteManagement\\wwwroot\\css\\Banner.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-04T00:12:52.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Mapping.cs",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Services\\Mapping.cs",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Services\\Mapping.cs",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Services\\Mapping.cs",
-              "RelativeToolTip": "TravelSiteManagement\\Services\\Mapping.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T23:00:25.063Z",
+              "Title": "Layout.css",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Layout.css",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\wwwroot\\css\\Layout.css",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Layout.css",
+              "RelativeToolTip": "TravelSiteManagement\\wwwroot\\css\\Layout.css",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-04T01:25:20.841Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 205,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Offer.cs",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\ViewModel\\Offer.cs",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\ViewModel\\Offer.cs",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\ViewModel\\Offer.cs",
-              "RelativeToolTip": "TravelSiteManagement\\ViewModel\\Offer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:58:38.197Z",
+              "DocumentIndex": 7,
+              "Title": "Destination.cshtml",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Home\\Destination.cshtml",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\Home\\Destination.cshtml",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Home\\Destination.cshtml",
+              "RelativeToolTip": "TravelSiteManagement\\Views\\Home\\Destination.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T22:43:11.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TravelSiteManagement\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAIAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T15:43:31.503Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Hotel\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\Hotel\\Edit.cshtml",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Hotel\\Edit.cshtml",
+              "RelativeToolTip": "TravelSiteManagement\\Views\\Hotel\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T19:39:24.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "site.css",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\wwwroot\\css\\site.css",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "TravelSiteManagement\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-30T05:03:20.929Z"
             }
           ]
         }

@@ -73,6 +73,7 @@ namespace TravelSiteWeb.Data
             }
             context.SaveChanges();
             */
+            /*
             if (context.Flights.Any())
             {
                 return; // DB has been seeded
@@ -92,7 +93,8 @@ namespace TravelSiteWeb.Data
                 context.Flights.Add(f);
             }
             context.SaveChanges();
-
+            */
+            /*
             if (context.Hotels.Any())
             {
                 return; // DB has been seeded
@@ -106,12 +108,13 @@ namespace TravelSiteWeb.Data
             new Hotel { HotelName = "Hotel Tokio", Address = "1-1-1 Yoyogi, Shibuya City, Tokio 151-8585, Japonia", PostalCode = "151-8585", City = "Tokio", Country = "Japonia", PhoneNumber = "891234567", Email = "hoteltokyo@example.com", CostPerNight = 600.00m, Website = "https://hoteltokyo.com", Description = "Luksusowy hotel w centrum Tokio", Image = "hoteltokyo.jpg" },
             new Hotel { HotelName = "Hotel Sydney", Address = "1 Martin Pl, Sydney NSW 2000, Australia", PostalCode = "2000", City = "Sydney", Country = "Australia", PhoneNumber = "765432189", Email = "hotelsydney@example.com", CostPerNight = 700.00m, Website = "https://hotelsydney.com", Description = "Pięciogwiazdkowy hotel w centrum Sydney", Image = "hotelsydney.jpg" }
             };
-
+            
             foreach (Hotel h in hotels)
             {
                 context.Hotels.Add(h);
             }
             context.SaveChanges();
+            */
         }
     }
 }

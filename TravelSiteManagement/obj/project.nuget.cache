@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0E0vN2k96M0=",
+  "dgSpecHash": "fMZa4pI/0ys=",
   "success": true,
   "projectFilePath": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\TravelSiteWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artim\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\artim\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\artim\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\artim\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\artim\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\artim\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

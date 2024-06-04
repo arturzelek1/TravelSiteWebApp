@@ -1,52 +1,132 @@
-﻿@{
+﻿@model List<TravelSiteWeb.ViewModel.Offer>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<link rel="stylesheet" href="~/css//Home.css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Home.css">
+    <link rel="stylesheet" href="~/css/ImageGallery.css">
+    <link rel="stylesheet" href="~/css/lastMinute.css">
+    <link rel="stylesheet" href="~/css/Banner.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script src="~/js/ImageGallery.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+    <script src="~/js/site.js"></script>
+    
+</head>
 
-<div class="starter">
-    <div id="welcome">
-        <img id="logo" src="https://static.vecteezy.com/system/resources/previews/009/663/724/non_2x/sun-sun-ray-icon-transparent-free-png.png"></img>
-        <h1>CheapTravel</h1>
-        <p>Explore More for Less</p>
+
+<body>
+        <div class="starter">
+            <div id="welcome">
+                <h1>
+                    CheapTravel
+                <img id="sun-logo" src="https://static.vecteezy.com/system/resources/previews/009/663/724/non_2x/sun-sun-ray-icon-transparent-free-png.png" style="mix-blend-mode: multiply;">
+            </h1>
+                <p>Explore More for Less</p>
+            </div>
+            <div id="calendar"></div>
+        <section class="section-finder">
+            <div class="finder">
+                <div class="form-group">
+                    <div class="input-container">
+                        <input type="text" id="where" class="form-control airport-input" placeholder="Dokąd" />
+                        <i class="fas fa-plane icon"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input type="date" id="calendar" class="form-control datepicker" placeholder="Kiedy i na ile" />
+                        <i class="fas fa-calendar-alt icon"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input type="text" id="from" class="form-control airport-input" placeholder="Skąd i jak" />
+                        <i class="fas fa-map-marker-alt icon"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input type="text" id="people" class="form-control" placeholder="Ile osób" />
+                        <i class="fas fa-users icon"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Szukaj" class="btn btn-default" />
+                </div>
+            </div>
+            </section>
+    
+        </div>
+    <div class="banner">
+        <img class="login-logo" src="~/Assets/Login.png" alt="Login logo">
+        <div class="banner-text">
+            <h1>Don't waste time</h1>
+            <p>Login to book your holiday</p>
+        </div>
+        <a class="login-button" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </div>
+    <section class="image-gallery">
+        <div class="arrow left-arrow" onclick="previousImage()">
+            <i class="fas fa-arrow-left"></i> <!-- Font Awesome left arrow icon -->
+        </div>
+        <div class="gallery-container">
+            
+            <img src="~/Assets/Thailand.jpg" alt="Image 1" class="gallery-image">
+            
+        </div>
+        <div class="arrow right-arrow" onclick="nextImage()">
+            <i class="fas fa-arrow-right"></i> <!-- Font Awesome right arrow icon -->
+        </div>
+    </section>
+
+    <div class="last-offer">
+        <h1>Last Minute Offers</h1>
     </div>
 
-</div>
+    <section class="last-minute">
+        <div class="last-minute-offers">
+            <div class="grid-container">
+                @foreach (var lastMinute in Model.Take(4))
+                {
+                    @if (lastMinute.DateStart.Date < DateTime.Today.AddDays(30))
+                    {
+                        <div class="offer-item">
+                            @foreach (var hotel in lastMinute.Hotels)
+                            {
+                               
+                                <div class="hotelIMG">
+                                    <img src="@hotel.Image" alt="Hotel Image" />
+                                </div>
+                                <div class="hotel-details">
+                                    <h3>@hotel.HotelName</h3>
+                                </div>
+                            }
+                            <div class="hotel-info">
+                                <h2>@lastMinute.ToLocation</h2>
+                                <h3>@lastMinute.City</h3>
+                                <span class="offer-dates">@lastMinute.DateStart.ToString("dd.MM.yyyy") - @lastMinute.DateEnd.ToString("dd.MM.yyyy")</span>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="no-offer">
+                            <h2>No last minute offers right now.</h2>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </section>
+   
+</body>
 
-<section class="section-finder">
-    <div class="finder">
-
-        <div class="date-from">
-            <label class="label-date-from">Od kiedy?</label>
-            <div class="pool">
-                <input type="date" id="date" placeholder="Search"/>
-            </div>
-
-        </div>
-        <div class="date-to">
-            <label class="label-date-to">Do kiedy?</label>
-            <div class="pool">
-                <input type="date" id="date" placeholder="Search" />
-            </div>
-        </div>
-        <div class="where">
-            <label class="label-where">Gdzie?</label>
-            <div class="pool">
-                <input type="text" id="where" placeholder="Search" />
-                @*<img id="where-icon" src="https://cdn-icons-png.flaticon.com/512/2582/2582606.png"></img> *@
-                
-            </div>
-        </div>
-        <div class="from">
-            <label class="label-from">Skąd?</label>
-            <div class="pool">
-                <input type="text" id="from" placeholder="Search" />
-                @*<img id="from-icon" src="https://www.freeiconspng.com/uploads/location-icon-24.png"></img> *@
-            </div>
-           
-        </div>
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Search" class="btn btn-default" />
-        </div>
-    </div>
-</section>
+</html>

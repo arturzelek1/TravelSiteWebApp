@@ -1,0 +1,77 @@
+﻿@model IEnumerable<TravelSiteWeb.Models.Flight>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Add">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TravelDestinationID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlightNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartureDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArrivalDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AirportFrom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AirportTo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FlightCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AirportCity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelDestinationID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FlightNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartureDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArrivalDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AirportFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AirportTo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FlightCost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AirportCity)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FlightID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FlightID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FlightID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

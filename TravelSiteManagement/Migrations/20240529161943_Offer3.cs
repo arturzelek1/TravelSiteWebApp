@@ -5,7 +5,7 @@
 namespace TravelSiteWeb.Migrations
 {
     /// <inheritdoc />
-    public partial class Roles : Migration
+    public partial class Offer3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

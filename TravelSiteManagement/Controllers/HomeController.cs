@@ -5,13 +5,15 @@ using TravelSiteWeb.Data;
 using TravelSiteWeb.Models;
 using TravelSiteWeb.Services;
 using TravelSiteWeb.ViewModel;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
+
 
 namespace TravelSiteWeb.Controllers
 {
 
     public class HomeController : Controller
     {
-
         private readonly ILogger<HomeController> _logger;
         //Propably wont work 
         //private readonly IClientOrderService _clientOrderService;
@@ -22,7 +24,6 @@ namespace TravelSiteWeb.Controllers
         {
             _logger = logger;
             _mappingService = mappingService;
-            
         }
 
         public IActionResult ClientOrder([FromServices] TravelContext context)
@@ -30,9 +31,12 @@ namespace TravelSiteWeb.Controllers
             var clientOrderViewModels = _mappingService.GetClientOrderViewModels(context);
             return View(clientOrderViewModels);
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index([FromServices] TravelContext context)
         {
-            return View();
+
+            var offers = _mappingService.GetOfferViewModel(context);
+           
+            return View(offers);
         }
 
         public IActionResult Destination()

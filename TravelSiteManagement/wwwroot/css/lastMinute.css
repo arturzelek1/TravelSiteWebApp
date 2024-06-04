@@ -1,0 +1,78 @@
+﻿.last-offer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.last-minute-offers {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    background-color: white; /* Light background for contrast */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for responsive design */
+    gap: 20px;
+    max-width: 1200px; /* Center container with a max width */
+}
+
+.offer-item {
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners apply to children */
+    background-color: white; /* White background for readability */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    display: grid;
+    grid-template-rows: auto auto auto; /* Stack the image, hotel details, and info vertically */
+    gap: 10px;
+    padding: 10px; /* Padding for spacing */
+}
+
+.hotelIMG img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Slightly smaller max height */
+    object-fit: cover; /* Maintain aspect ratio while covering container */
+}
+
+.hotel-details h3, .hotel-info h2, .hotel-info h3, .hotel-info .offer-dates {
+    margin: 0; /* Remove default margins */
+    padding: 5px 0; /* Add padding for spacing */
+}
+
+.hotel-details h3 {
+    font-size: 1em; /* Standard font for hotel name */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.hotel-info {
+    display: flex;
+    flex-direction: column; /* Stack info vertically */
+}
+
+    .hotel-info h2 {
+        font-size: 1em; /* Standard font size */
+        color: #333; /* Darker color for contrast */
+    }
+
+    .hotel-info h3 {
+        font-size: 0.9em; /* Standard font size */
+        color: #777; /* Lighter color for subtext */
+    }
+
+    .hotel-info .offer-dates {
+        font-size: 0.8em; /* Smaller font size */
+        color: #999; /* Light color for dates */
+    }
+
+.no-offer {
+    grid-column: span 2; /* Adjust to span the full width of the container */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border for visibility */
+    border-radius: 10px; /* Rounded corners */
+}
