@@ -1,0 +1,54 @@
+﻿body{
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content:center;
+    margin-top:100px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+#login-icon, #password-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; /* Dodaj odstęp między ikoną a polem input */
+}
+
+.form-floating {
+    margin-bottom: 1rem;
+}
+
+    .form-floating .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-floating .input-container .form-control {
+        flex-grow: 1;
+    }
+
+#register-button {
+    display: block;
+    width: 100%; /* make the button full width */
+    background-color: #4CAF50; /* green background color */
+    color: #ffffff; /* white text color */
+    padding: 10px 20px; /* add some padding to the button */
+    border: none; /* remove the border */
+    border-radius: 5px; /* add a rounded corner to the button */
+    cursor: pointer; /* change the cursor to a pointer when hovering over the button */
+}
+
+    .register-button:hover {
+        background-color: #3e8e41; /* change the background color on hover */
+    }

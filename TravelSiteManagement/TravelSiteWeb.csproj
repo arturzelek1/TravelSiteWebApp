@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\Panel.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.3.3" />
     <PackageReference Include="FluentValidation" Version="11.9.1" />
     <PackageReference Include="Mapster" Version="7.4.0" />
@@ -45,6 +49,10 @@
     <Resource Include="wwwroot\Assets\CheapTravelBackground.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Assets\Countries\" />
   </ItemGroup>
 
 </Project>

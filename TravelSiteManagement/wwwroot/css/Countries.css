@@ -1,0 +1,88 @@
+﻿.Inspiration{
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    margin-top:20px;
+}
+
+.countries {
+    justify-content: center;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust for responsive design */
+    gap: 20px; /* odstęp między kolumnami */
+    max-width: 1200px; /* Center container with a max width */
+    margin-bottom: 20px;
+}
+
+.country-column {
+    flex: 1; /* kolumna zajmuje całą dostępną przestrzeń */
+    position: relative; /* pozycja względem rodzica */
+    overflow: hidden; /* ukrycie elementów, które wystają poza kontener */
+    border-radius: 10px; /* zaokrąglenie rogów */
+}
+
+    .country-column img {
+        width: 100%; /* szerokość obrazków w kolumnie */
+        height: 100%; /* proporcjonalne dopasowanie wysokości */
+    }
+
+.country-column .country-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white; /* Kolor tekstu */
+    padding: 5px; /* Wielkość wewnętrznego odstępu */
+    border-bottom-left-radius: 10px; /* Zaokrąglenie dolnego lewego rogu */
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for responsive design */
+    gap: 20px; /* odstęp między kolumnami */
+    max-width: 1200px; /* Center container with a max width */
+   
+}
+.country-column-second {
+    flex: 1; /* druga kolumna zajmuje całą dostępną przestrzeń */
+    position: relative; /* pozycja względem rodzica */
+    overflow: hidden; /* ukrycie elementów, które wystają poza kontener */
+    border-radius: 10px; /* zaokrąglenie rogów */
+    margin-bottom:30px;
+}
+
+    .country-column-second img {
+        width: 100%; /* szerokość obrazków w drugiej kolumnie */
+        height: 100%; /* proporcjonalne dopasowanie wysokości */
+        border-radius: 10px;
+    }
+.country-column-second .country-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white; /* Kolor tekstu */
+    padding: 5px; /* Wielkość wewnętrznego odstępu */
+    border-bottom-left-radius: 10px; /* Zaokrąglenie dolnego lewego rogu */
+    font-size: 24px;
+    margin-bottom:10px;
+    margin-left:5px;
+}
+
+.country-column img:hover {
+    transform: scale(1.1); /* powiększenie obrazka o 10% */
+    filter: brightness(105%);
+    transition: transform 0.7s; /* animacja powiększenia */
+}
+
+.country-column-second img:hover {
+    transform: scale(1.1); /* powiększenie obrazka o 10% */
+    filter: brightness(105%);
+    transition: transform 0.7s; /* animacja powiększenia */
+}

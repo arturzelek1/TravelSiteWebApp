@@ -1,0 +1,68 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if(SignInManager.IsSignedIn(User))
+
+{
+    var user = await UserManager.GetUserAsync(User);
+    var roles = await UserManager.GetRolesAsync(user);
+
+    if (roles.Contains("Admin"))
+    {
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>6 Kafelków</title>
+            <link rel="stylesheet" href="~/css/Panel.css">
+        </head>
+        <body>
+            <h1>Admin Control Panel</h1>
+            <div class="container">
+                <a asp-action="UserManagement" class="tile">
+                    User Management
+                    <div class="icon-container">
+                    <img id="icon"src="~/Assets/ControlPanel/UserManager.png" alt="User Manager" />
+                    </div>
+                </a>
+                <a asp-action="ContentManagement"  class="tile">
+                    Content Management
+                    <div class="icon-container">
+                        <img id="icon" src="~/Assets/ControlPanel/Content.png" alt="Content Manager" />
+                    </div>
+                </a>
+                <a asp-action="Statistics" class="tile">
+                    Statistics
+                    <div class="icon-container">
+                        <img id="icon" src="~/Assets/ControlPanel/Statistics.png" alt="Statistics" />
+                    </div>
+                </a>
+                <a asp-action="SystemSettings" class="tile">
+                    System Settings
+                    <div class="icon-container">
+                        <img id="icon" src="~/Assets/ControlPanel/System.png" alt="System Settings" />
+                    </div>
+                </a>
+                <a asp-action="Support" class="tile">
+                    Technical Issues
+                    <div class="icon-container">
+                        <img id="icon" src="~/Assets/ControlPanel/Support.png" alt="Support" />
+                    </div>
+                </a>
+                <a asp-action="Payment" class="tile">
+                    Payment
+                    <div class="icon-container">
+                        <img id="icon" src="~/Assets/ControlPanel/Payment.png" alt="Payment" />
+                    </div>
+                </a>
+            </div>
+        </body>
+        </html>
+    }
+    else
+    {
+        <h3>Acces denied</h3>
+    }
+}

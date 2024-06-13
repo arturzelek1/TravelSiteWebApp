@@ -31,9 +31,14 @@
     padding: 10px; /* Padding for spacing */
 }
 
+.offer-item:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
 .hotelIMG img {
     width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Maintain aspect ratio */
     max-height: 150px; /* Slightly smaller max height */
     object-fit: cover; /* Maintain aspect ratio while covering container */
 }
@@ -76,3 +81,4 @@
     border: 1px solid #ddd; /* Light border for visibility */
     border-radius: 10px; /* Rounded corners */
 }
+

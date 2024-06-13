@@ -181,6 +181,66 @@
       "PackagePath": "staticwebassets\\Assets\\Barcelona.jpg"
     },
     {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\ControlPanel\\Content.png",
+      "PackagePath": "staticwebassets\\Assets\\ControlPanel\\Content.png"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\ControlPanel\\Payment.png",
+      "PackagePath": "staticwebassets\\Assets\\ControlPanel\\Payment.png"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\ControlPanel\\Statistics.png",
+      "PackagePath": "staticwebassets\\Assets\\ControlPanel\\Statistics.png"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\ControlPanel\\Support.png",
+      "PackagePath": "staticwebassets\\Assets\\ControlPanel\\Support.png"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\ControlPanel\\System.png",
+      "PackagePath": "staticwebassets\\Assets\\ControlPanel\\System.png"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\ControlPanel\\UserManager.png",
+      "PackagePath": "staticwebassets\\Assets\\ControlPanel\\UserManager.png"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Countries\\Brazylia.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Countries\\Brazylia.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Countries\\Dominikana.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Countries\\Dominikana.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Countries\\Grecja.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Countries\\Grecja.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Countries\\Kenia.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Countries\\Kenia.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Countries\\Madera.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Countries\\Madera.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Countries\\Malta.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Countries\\Malta.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Countries\\Tajlandia.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Countries\\Tajlandia.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Countries\\Turcja.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Countries\\Turcja.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Countries\\Zanzibar.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Countries\\Zanzibar.jpg"
+    },
+    {
       "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Croatia.jpg",
       "PackagePath": "staticwebassets\\Assets\\Croatia.jpg"
     },
@@ -193,6 +253,10 @@
       "PackagePath": "staticwebassets\\Assets\\Italy.jpg"
     },
     {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Login-Icon.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Login-Icon.jpg"
+    },
+    {
       "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Login.png",
       "PackagePath": "staticwebassets\\Assets\\Login.png"
     },
@@ -203,6 +267,10 @@
     {
       "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\ParisHotel.jpg",
       "PackagePath": "staticwebassets\\Assets\\ParisHotel.jpg"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Password-Icon.png",
+      "PackagePath": "staticwebassets\\Assets\\Password-Icon.png"
     },
     {
       "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\Assets\\Thailand.jpg",
@@ -221,6 +289,10 @@
       "PackagePath": "staticwebassets\\css\\Banner.css"
     },
     {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Countries.css",
+      "PackagePath": "staticwebassets\\css\\Countries.css"
+    },
+    {
       "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Destination.css",
       "PackagePath": "staticwebassets\\css\\Destination.css"
     },
@@ -235,6 +307,18 @@
     {
       "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Layout.css",
       "PackagePath": "staticwebassets\\css\\Layout.css"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Panel.css",
+      "PackagePath": "staticwebassets\\css\\Panel.css"
+    },
+    {
+      "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
     },
     {
       "Id": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Test.css",
