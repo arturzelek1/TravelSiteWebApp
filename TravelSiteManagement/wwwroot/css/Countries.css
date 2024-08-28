@@ -24,11 +24,15 @@
     position: relative; /* pozycja względem rodzica */
     overflow: hidden; /* ukrycie elementów, które wystają poza kontener */
     border-radius: 10px; /* zaokrąglenie rogów */
+    transition: transform 0.7s ease-in;
+    transform: scale(1);
 }
 
     .country-column img {
         width: 100%; /* szerokość obrazków w kolumnie */
         height: 100%; /* proporcjonalne dopasowanie wysokości */
+        transition: transform 0.7s ease-in;
+        transform: scale(1);
     }
 
 .country-column .country-name {
@@ -62,6 +66,8 @@
         width: 100%; /* szerokość obrazków w drugiej kolumnie */
         height: 100%; /* proporcjonalne dopasowanie wysokości */
         border-radius: 10px;
+        transition: transform 0.7s ease-in;
+        transform: scale(1);
     }
 .country-column-second .country-name {
     position: absolute;
@@ -78,11 +84,11 @@
 .country-column img:hover {
     transform: scale(1.1); /* powiększenie obrazka o 10% */
     filter: brightness(105%);
-    transition: transform 0.7s; /* animacja powiększenia */
+    transition: transform 0.7s ease-out; /* animacja powiększenia */
 }
 
 .country-column-second img:hover {
     transform: scale(1.1); /* powiększenie obrazka o 10% */
     filter: brightness(105%);
-    transition: transform 0.7s; /* animacja powiększenia */
+    transition: transform 0.7s ease-out; /* animacja powiększenia */
 }

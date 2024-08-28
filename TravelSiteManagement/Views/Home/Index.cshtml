@@ -64,27 +64,6 @@
             </section>
     
         </div>
-    <div class="banner">
-        <img class="login-logo" src="~/Assets/Login.png" alt="Login logo">
-        <div class="banner-text">
-            <h1>Don't waste time</h1>
-            <p>Login to book your holiday</p>
-        </div>
-        <a class="login-button" asp-area="Identity" asp-page="/Account/Login">Login</a>
-    </div>
-    <section class="image-gallery">
-        <div class="arrow left-arrow" onclick="previousImage()">
-            <i class="fas fa-arrow-left"></i> <!-- Font Awesome left arrow icon -->
-        </div>
-        <div class="gallery-container">
-            
-            <img src="~/Assets/Thailand.jpg" alt="Image 1" class="gallery-image">
-            
-        </div>
-        <div class="arrow right-arrow" onclick="nextImage()">
-            <i class="fas fa-arrow-right"></i> <!-- Font Awesome right arrow icon -->
-        </div>
-    </section>
 
     <div class="last-offer">
         <h1>Last Minute Offers</h1>
@@ -100,7 +79,7 @@
                         <div class="offer-item">
                             @foreach (var hotel in lastMinute.Hotels)
                             {
-                               
+
                                 <div class="hotelIMG">
                                     <img src="@hotel.Image" alt="Hotel Image" />
                                 </div>
@@ -125,6 +104,24 @@
             </div>
         </div>
     </section>
+
+    <section class="image-gallery">
+        <div class="arrow left-arrow" onclick="previousImage()">
+            <i class="fas fa-arrow-left"></i> <!-- Font Awesome left arrow icon -->
+        </div>
+        <div class="gallery-container">
+            
+            <img src="~/Assets/Thailand.jpg" alt="Image 1" class="gallery-image">
+            
+        </div>
+        <div class="arrow right-arrow" onclick="nextImage()">
+            <i class="fas fa-arrow-right"></i> <!-- Font Awesome right arrow icon -->
+        </div>
+    </section>
+
+
+
+   
    
     <div class="Inspiration">
         <h1>Get Inspired for summer</h1>
@@ -163,6 +160,15 @@
             </div>
         </div>
     </section>
+
+    <div class="banner">
+        <img class="login-logo" src="~/Assets/Login.png" alt="Login logo">
+        <div class="banner-text">
+            <h1>Don't waste time</h1>
+            <p>Login to book your holiday</p>
+        </div>
+        <a class="login-button" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </div>
 </body>
 
 </html>

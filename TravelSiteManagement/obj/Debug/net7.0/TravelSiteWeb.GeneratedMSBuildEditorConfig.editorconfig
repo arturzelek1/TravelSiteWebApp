@@ -58,6 +58,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/GitHub/TravelSiteWebApp/TravelSiteManagement/Views/AdminDashboard/Blank.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQmxhbmsuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/TravelSiteWebApp/TravelSiteManagement/Views/AdminDashboard/ClientTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQ2xpZW50VGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/TravelSiteWebApp/TravelSiteManagement/Views/AdminDashboard/DestinationTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcRGVzdGluYXRpb25UYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/TravelSiteWebApp/TravelSiteManagement/Views/AdminDashboard/FlightTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcRmxpZ2h0VGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/TravelSiteWebApp/TravelSiteManagement/Views/AdminDashboard/HotelTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcSG90ZWxUYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/TravelSiteWebApp/TravelSiteManagement/Views/AdminDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/GitHub/TravelSiteWebApp/TravelSiteManagement/Views/AdminDashboard/ReservationTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcUmVzZXJ2YXRpb25UYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/GitHub/TravelSiteWebApp/TravelSiteManagement/Views/Admin/ContentManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGVudE1hbmFnZW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

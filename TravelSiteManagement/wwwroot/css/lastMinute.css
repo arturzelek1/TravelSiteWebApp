@@ -3,6 +3,10 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 20px;
+    padding: 20px;
+    background-color:white;
+    margin-top:30px;
+   
 }
 
 .last-minute-offers {
@@ -29,11 +33,13 @@
     grid-template-rows: auto auto auto; /* Stack the image, hotel details, and info vertically */
     gap: 10px;
     padding: 10px; /* Padding for spacing */
+    transform: scale(1);
+    transition: transform 0.5s ease-out;
 }
 
 .offer-item:hover{
     transform: scale(1.1);
-    transition: transform 0.5s;
+    transition: transform 0.5s ease-in;
 }
 
 .hotelIMG img {
