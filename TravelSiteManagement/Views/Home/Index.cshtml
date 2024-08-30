@@ -1,10 +1,12 @@
-﻿@model List<TravelSiteWeb.ViewModel.Offer>
+﻿@using Microsoft.AspNetCore.Mvc.Localization;
+@inject IViewLocalizer Localizer
+
+@model List<TravelSiteWeb.ViewModel.Offer>
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,56 +19,55 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <script src="~/js/ImageGallery.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
-    <script src="~/js/site.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js"></script>
+    <script src="~/js/site.js"></script>
 </head>
 
 <body>
-        <div class="starter">
-            <div id="welcome">
-                <h1>
-                    CheapTravel
+    <div class="starter">
+        <div id="welcome">
+            <h1>
+                @Localizer["BrandName"]
                 <img id="sun-logo" src="https://static.vecteezy.com/system/resources/previews/009/663/724/non_2x/sun-sun-ray-icon-transparent-free-png.png" style="mix-blend-mode: multiply;">
             </h1>
-                <p>Explore More for Less</p>
-            </div>
-            <div id="calendar"></div>
+            <p>@Localizer["BrandMotto"]</p>
+        </div>
+        <div id="calendar"></div>
         <section class="section-finder">
             <div class="finder">
                 <div class="form-group">
                     <div class="input-container">
-                        <input type="text" id="where" class="form-control airport-input" placeholder="Dokąd" />
+                        <input type="text" id="where" class="form-control airport-input" placeholder="@Localizer["calendar-where"]" />
                         <i class="fas fa-plane icon"></i>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-container">
-                        <input type="date" id="calendar" class="form-control datepicker" placeholder="Kiedy i na ile" />
+                        <input type="date" id="calendar" class="form-control datepicker" placeholder="@Localizer["box-when"]" />
                         <i class="fas fa-calendar-alt icon"></i>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-container">
-                        <input type="text" id="from" class="form-control airport-input" placeholder="Skąd i jak" />
+                        <input type="text" id="from" class="form-control airport-input" placeholder="@Localizer["From"]" />
                         <i class="fas fa-map-marker-alt icon"></i>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-container">
-                        <input type="text" id="people" class="form-control" placeholder="Ile osób" />
+                        <input type="text" id="people" class="form-control" placeholder="@Localizer["Persons"]" />
                         <i class="fas fa-users icon"></i>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Szukaj" class="btn btn-default" />
+                    <input type="submit" value="@Localizer["Search"]" class="btn btn-default" />
                 </div>
             </div>
-            </section>
-    
-        </div>
+        </section>
+    </div>
 
     <div class="last-offer">
-        <h1>Last Minute Offers</h1>
+        <h1>@Localizer["LastMinuteOffers"]</h1>
     </div>
 
     <section class="last-minute">
@@ -74,12 +75,11 @@
             <div class="grid-container">
                 @foreach (var lastMinute in Model.Take(4))
                 {
-                    @if (lastMinute.DateStart.Date < DateTime.Today.AddDays(30))
+                    if (lastMinute.DateStart.Date < DateTime.Today.AddDays(30))
                     {
                         <div class="offer-item">
                             @foreach (var hotel in lastMinute.Hotels)
                             {
-
                                 <div class="hotelIMG">
                                     <img src="@hotel.Image" alt="Hotel Image" />
                                 </div>
@@ -97,7 +97,7 @@
                     else
                     {
                         <div class="no-offer">
-                            <h2>No last minute offers right now.</h2>
+                            <h2>@Localizer["NoLastMinuteOffers"]</h2>
                         </div>
                     }
                 }
@@ -107,56 +107,50 @@
 
     <section class="image-gallery">
         <div class="arrow left-arrow" onclick="previousImage()">
-            <i class="fas fa-arrow-left"></i> <!-- Font Awesome left arrow icon -->
+            <i class="fas fa-arrow-left"></i>
         </div>
         <div class="gallery-container">
-            
             <img src="~/Assets/Thailand.jpg" alt="Image 1" class="gallery-image">
-            
         </div>
         <div class="arrow right-arrow" onclick="nextImage()">
-            <i class="fas fa-arrow-right"></i> <!-- Font Awesome right arrow icon -->
+            <i class="fas fa-arrow-right"></i>
         </div>
     </section>
 
-
-
-   
-   
     <div class="Inspiration">
-        <h1>Get Inspired for summer</h1>
+        <h1>@Localizer["GetInspiredForSummer"]</h1>
     </div>
     <section class="countries">
         <div class="grid-container1">
             <div class="country-column">
                 <img src="~/Assets/Countries/Madera.jpg" alt="Country Name 1">
-                <div class="country-name">Madera</div>
+                <div class="country-name">@Localizer["Madera"]</div>
             </div>
             <div class="country-column">
                 <img class="country-image" src="~/Assets/Countries/Zanzibar.jpg" alt="Country Name 2">
-                <div class="country-name">Zanzibar</div>
+                <div class="country-name">@Localizer["Zanzibar"]</div>
             </div>
             <div class="country-column">
                 <img src="~/Assets/Countries/Brazylia.jpg" alt="Country Name 3">
-                <div class="country-name">Brazylia</div>
+                <div class="country-name">@Localizer["Brazil"]</div>
             </div>
         </div>
         <div class="grid-container2">
             <div class="country-column-second">
                 <img src="~/Assets/Countries/Turcja.jpg" alt="Country Name 4">
-                <div class="country-name">Turcja</div>
+                <div class="country-name">@Localizer["Turkey"]</div>
             </div>
             <div class="country-column-second">
                 <img src="~/Assets/Countries/Malta.jpg" alt="Country Name 5">
-                <div class="country-name">Malta</div>
+                <div class="country-name">@Localizer["Malta"]</div>
             </div>
             <div class="country-column-second">
                 <img src="~/Assets/Countries/Grecja.jpg" alt="Country Name 6">
-                <div class="country-name">Grecja</div>
+                <div class="country-name">@Localizer["Greece"]</div>
             </div>
             <div class="country-column-second">
                 <img src="~/Assets/Countries/Tajlandia.jpg" alt="Country Name 7">
-                <div class="country-name">Tajlandia</div>
+                <div class="country-name">@Localizer["Thailand"]</div>
             </div>
         </div>
     </section>
@@ -164,11 +158,10 @@
     <div class="banner">
         <img class="login-logo" src="~/Assets/Login.png" alt="Login logo">
         <div class="banner-text">
-            <h1>Don't waste time</h1>
-            <p>Login to book your holiday</p>
+            <h1>@Localizer["DontWasteTime"]</h1>
+            <p>@Localizer["LoginToBook"]</p>
         </div>
         <a class="login-button" asp-area="Identity" asp-page="/Account/Login">Login</a>
     </div>
 </body>
-
 </html>

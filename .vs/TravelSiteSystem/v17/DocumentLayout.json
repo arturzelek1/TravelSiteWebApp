@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "E:\\GitHub\\TravelSiteWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\resources\\areas\\identity\\pages\\account\\login.es-es.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\resources\\areas\\identity\\pages\\account\\login.es-es.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\resources\\areas\\identity\\pages\\account\\login.en-us.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\resources\\areas\\identity\\pages\\account\\login.en-us.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\wwwroot\\css\\banner.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\wwwroot\\css\\banner.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\admindashboard\\reservationtable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\admindashboard\\reservationtable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\admindashboard\\hoteltable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\admindashboard\\hoteltable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\admindashboard\\flighttable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\admindashboard\\flighttable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\views\\admindashboard\\blank.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\views\\admindashboard\\blank.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\controllers\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\controllers\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|e:\\github\\travelsitewebapp\\travelsitemanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9FBC99D-15C8-4D97-863C-38B626FCA278}|TravelSiteManagement\\TravelSiteWeb.csproj|solutionrelative:travelsitemanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,33 +29,44 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 201,
+          "DockedWidth": 183,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "TravelSiteManagement\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T18:32:22.962Z",
+              "Title": "Login.es-ES.resx",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Resources\\Areas\\Identity\\Pages\\Account\\Login.es-ES.resx",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\Resources\\Areas\\Identity\\Pages\\Account\\Login.es-ES.resx",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Resources\\Areas\\Identity\\Pages\\Account\\Login.es-ES.resx",
+              "RelativeToolTip": "TravelSiteManagement\\Resources\\Areas\\Identity\\Pages\\Account\\Login.es-ES.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-08-30T20:22:12.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.en-US.resx",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Resources\\Areas\\Identity\\Pages\\Account\\Login.en-US.resx",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\Resources\\Areas\\Identity\\Pages\\Account\\Login.en-US.resx",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Resources\\Areas\\Identity\\Pages\\Account\\Login.en-US.resx",
+              "RelativeToolTip": "TravelSiteManagement\\Resources\\Areas\\Identity\\Pages\\Account\\Login.en-US.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-08-30T20:22:05.592Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Banner.css",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Banner.css",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\wwwroot\\css\\Banner.css",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\wwwroot\\css\\Banner.css",
-              "RelativeToolTip": "TravelSiteManagement\\wwwroot\\css\\Banner.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-28T18:30:05.965Z",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Startup.cs",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\Startup.cs",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Startup.cs",
+              "RelativeToolTip": "TravelSiteManagement\\Startup.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T20:14:34.59Z",
               "EditorCaption": ""
             },
             {
@@ -82,93 +77,22 @@
               "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\Home\\Index.cshtml",
               "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "TravelSiteManagement\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAOAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAACgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T18:23:24.797Z",
+              "WhenOpened": "2024-08-30T20:04:31.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ReservationTable.cshtml",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\ReservationTable.cshtml",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\AdminDashboard\\ReservationTable.cshtml",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\ReservationTable.cshtml",
-              "RelativeToolTip": "TravelSiteManagement\\Views\\AdminDashboard\\ReservationTable.cshtml",
-              "ViewState": "AQIAAFsBAAAAAAAAAADwv38BAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T18:20:03.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HotelTable.cshtml",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\HotelTable.cshtml",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\AdminDashboard\\HotelTable.cshtml",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\HotelTable.cshtml",
-              "RelativeToolTip": "TravelSiteManagement\\Views\\AdminDashboard\\HotelTable.cshtml",
-              "ViewState": "AQIAAFoBAAAAAAAAAAAAAH4BAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T18:19:52.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FlightTable.cshtml",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\FlightTable.cshtml",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\AdminDashboard\\FlightTable.cshtml",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\FlightTable.cshtml",
-              "RelativeToolTip": "TravelSiteManagement\\Views\\AdminDashboard\\FlightTable.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH4BAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T18:19:25.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Blank.cshtml",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\Blank.cshtml",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\AdminDashboard\\Blank.cshtml",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\Blank.cshtml",
-              "RelativeToolTip": "TravelSiteManagement\\Views\\AdminDashboard\\Blank.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T18:09:41.975Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 184,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Views\\AdminDashboard\\Index.cshtml",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Views\\AdminDashboard\\Index.cshtml",
-              "RelativeToolTip": "TravelSiteManagement\\Views\\AdminDashboard\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T18:10:54.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AdminDashboard.cs",
-              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Controllers\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "TravelSiteManagement\\Controllers\\AdminDashboard.cs",
-              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Controllers\\AdminDashboard.cs",
-              "RelativeToolTip": "TravelSiteManagement\\Controllers\\AdminDashboard.cs",
-              "ViewState": "AQIAALQAAAAAAAAAAAAAAMMAAAAiAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Program.cs",
+              "RelativeDocumentMoniker": "TravelSiteManagement\\Program.cs",
+              "ToolTip": "E:\\GitHub\\TravelSiteWebApp\\TravelSiteManagement\\Program.cs",
+              "RelativeToolTip": "TravelSiteManagement\\Program.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAkwDkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T16:17:37.387Z",
+              "WhenOpened": "2024-08-30T18:54:21.096Z",
               "EditorCaption": ""
             }
           ]

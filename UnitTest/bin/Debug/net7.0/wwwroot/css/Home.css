@@ -1,0 +1,109 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Tahoma, sans-serif;
+    background-image: url('../Assets/CheapTravelBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.starter {
+    position: relative;
+    z-index: 1; /* Ensure the content is on top of the background image */
+    color: white;
+    height:100vh;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#sun-logo {
+    height: 50px;
+    width: 50px;
+
+}
+.section-finder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: none;
+
+}
+
+.finder {
+    display: flex;
+    align-items: stretch; /* Ensure all items stretch to the same height */
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1); /* Semi-transparent background */
+    border-radius: 50px;
+    padding: 20px 20px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    width: 100%; /* Ensure full width */
+    max-width: 1200px; /* Max width for larger screens */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-right: 1px solid #ddd;
+    flex-grow: 1; /* Allow form groups to grow and take available space */
+    position: relative;
+}
+
+    .form-group:last-child {
+        border-right: none;
+    }
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+    .input-container input[type="text"],
+    .input-container input[type="date"] {
+        border: none;
+        outline: none;
+        padding: 10px 10px 10px 20px; /* Extra padding for icon space */
+        width: 100%;
+        font-size: 14px;
+        background: transparent; /* Transparent input background */
+    }
+
+    .input-container .icon {
+        position: absolute;
+        right: 10px; /* Position icon to the right inside the input */
+        color: #333;
+        pointer-events: none; /* Allow click through to input */
+    }
+
+.form-group input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 100%; /* Ensure button stretches to match height */
+}
+
+.label-date-from, .label-date-to, .label-where, .label-from {
+    display: none;
+}

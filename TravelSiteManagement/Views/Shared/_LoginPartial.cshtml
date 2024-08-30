@@ -1,4 +1,6 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿@using Microsoft.AspNetCore.Mvc.Localization;
+@inject IViewLocalizer Localizer
+@using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
@@ -11,14 +13,14 @@
     if (roles.Contains("Admin"))
     {
             <li class="nav-item">
-                <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello Admin</a>
+                <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@Localizer["HelloAdmin"]</a>
             </li>
             <li class="nav-item">
-                    <a class="nav-link btn btn-link text-white" asp-controller="AdminDashboard" asp-action="Index">Control Panel</a>
+                <a class="nav-link btn btn-link text-white" asp-controller="AdminDashboard" asp-action="Index">@Localizer["ControlPanel"]</a>
             </li>
             <li class="nav-item">
                 <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                    <button type="submit" class="nav-link btn btn-link text-white">Logout</button>
+                    <button type="submit" class="nav-link btn btn-link text-white">@Localizer["Logout"]</button>
                 </form>
             </li>
     }
@@ -29,18 +31,18 @@
             </li>
             <li class="nav-item">
                 <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                    <button type="submit" class="nav-link btn btn-link text-white">Logout</button>
+                    <button type="submit" class="nav-link btn btn-link text-white">@Localizer["Logout"]</button>
                 </form>
             </li>
     }
     else if (roles.Contains("User"))
     {
             <li class="nav-item">
-                <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
+                <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@Localizer["Hello"] @User.Identity?.Name!</a>
             </li>
             <li class="nav-item">
                 <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                    <button type="submit" class="nav-link btn btn-link text-white">Logout</button>
+                    <button type="submit" class="nav-link btn btn-link text-white">@Localizer["Logout"]</button>
                 </form>
             </li>
     }
@@ -56,10 +58,10 @@
 else
 {
     <li class="nav-item">
-            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Register">@Localizer["Register"]</a>
     </li>
     <li class="nav-item">
-            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Login">@Localizer["Login"]</a>
     </li>
 }
 </ul>

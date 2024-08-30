@@ -15,6 +15,11 @@ using RepositoryUsingEFinMVC.Repository;
 using FluentValidation;
 using System.Configuration;
 using TravelSiteWeb.Repository;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Mapster;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
 
 namespace ProgramSettings
 {
@@ -50,6 +55,28 @@ namespace ProgramSettings
                             {
                                 webBuilder.UseStartup<Startup>();
                             });
+
+            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+            //Localizer
+            builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+            builder.Services.AddControllersWithViews()
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
+
+           
+
+            builder.Services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new[]
+                {
+                    new CultureInfo("en-US"),
+                    new CultureInfo("es-ES"),
+                };
+
+                options.DefaultRequestCulture = new RequestCulture("es-ES");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
             //Services
 
             //Mapping
@@ -96,7 +123,7 @@ namespace ProgramSettings
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<TravelContext>(options =>
                 options.UseSqlServer(connectionString));
-            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+            
             //Later state that to true after good verification email sender
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddRoles<IdentityRole>() //Add roles
@@ -186,7 +213,7 @@ namespace ProgramSettings
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
             //Authorization and authentication
             app.UseAuthorization();
             //app.UseAuthentication();

@@ -1,4 +1,6 @@
 ﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization;
+@inject IViewLocalizer Localizer
 @model LoginModel
 
 @{
@@ -18,7 +20,7 @@
            <section>
                <form id="account" method="post">
                     <h1>@ViewData["Title"]</h1>
-                   <h2>Already CheapTravel client</h2>
+                   <h2>@Localizer["AlreadyClient"]</h2>
                    <hr/>
                     <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
 
@@ -44,12 +46,12 @@
                        </label>
                    </div>
                    <div>
-                       <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                       <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">@Localizer["LogIn"]</button>
                    </div>
                    
                    <div>
                        <p>
-                           <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                           <a id="forgot-password" asp-page="./ForgotPassword">@Localizer["ForgotPass"]</a>
                        </p>
                    </div>
                    @*
@@ -65,18 +67,18 @@
            </section>
        </div>
        <div class="col-md-6 col-md-offset-2">
-          <h1>Don't have an account? Register now!</h1>
-          <h2>Benefits for logged users:</h2>
+          <h1>@Localizer["RegisterNow"]</h1>
+          <h2>@Localizer["Benefits"]</h2>
           <ul>
-                <li>Exclusive discounts on tours and vacation packages.</li>
-                <li>Early access to new tours before they are available to others.</li>
-                <li>Personalized tour offers based on past bookings and preferences.</li>
-                <li>Booking history available in the user’s profile.</li>
-                <li>Free travel insurance or the option to purchase it at a discounted rate.</li>
-                <li>Discounted extra luggage or transfer services.</li>
+                <li>@Localizer["Exclusive"]</li>
+                <li>@Localizer["EarlyAccess"]</li>
+                <li>@Localizer["Personalized"]</li>
+                <li>@Localizer["Booking"]</li>
+                <li>@Localizer["FreeTravel"]</li>
+                <li>@Localizer["Discount"]</li>
             </ul>
             <form id="registerProvider" asp-area="Identity" asp-page="/Account/Register">
-                <button id="register-button">Register</button>
+                <button id="register-button">@Localizer["Register"]</button>
             </form>
        </div>
    </div>
@@ -85,4 +87,3 @@
        <partial name="_ValidationScriptsPartial" />
    }
 </body>
-<html/>
